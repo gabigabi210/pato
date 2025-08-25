@@ -1,0 +1,173 @@
+body {
+    background-color: #2a2844;
+}
+
+#fundo {
+    height:250px;
+    width: 500px;
+    background-color: rgb(255, 146, 170);
+    border-radius: 35px;
+    position: absolute;
+    top: 240px;
+    left: 160px;
+}
+
+#pato {
+    height: 200px;
+    width: 230px;
+    position: relative;
+    bottom: -50px;
+    left: 125px;
+    background-color: rgb(226, 255, 241);   
+
+    .peninha-um {
+        height: 20px;
+        width: 20px;
+        background-color: rgb(226, 255, 241);
+        position: absolute;
+        border-radius: 30px 0px;
+        top: 0px;
+        left: 180px;
+        rotate: 30deg;
+        transition: all 0.5s ease-in-out;
+    }
+    
+    .peninha-dois {
+        height: 20px;
+        width: 20px;
+        background-color: rgb(226, 255, 241);
+        position: absolute;
+        border-radius: 0px 30px;
+        top: -10px;
+        left: 160px;
+        rotate: 20deg;
+        transition: all 0.5s ease-in-out;
+    }
+
+    #cabeca {
+        background-color: rgb(226, 255, 241);
+        height: 210px;
+        width: 230px;
+        border-radius: 50%;
+        position: inherit;
+        top: -100px;
+    }
+
+    #bico {
+        background-color: rgb(218, 117, 45);
+        height: 80px;
+        width: 175px;
+        position: absolute;
+        top: 0px;
+        left: -70px;
+        border-radius: 30px 20px 20px 60px;
+        overflow: hidden;
+
+        #sombra-bico {
+            height: 30px;
+            width: 175px;
+            background-color: rgba(182, 97, 37, 0.31);
+            position: inherit;
+            top: 50px;
+        }
+    }
+
+    .olho {
+        background-color: rgb(42, 41, 41);
+        height: 25px;
+        width: 20px;
+        position: absolute;
+        bottom: 103px;
+        left: 145px;
+        border-radius: 20px;
+        z-index: 2;
+        transition: all .3s ease-in-out;
+    }
+    #cabeca:hover {
+        .olho{height: 10px;
+        width: 25px;}
+        .peninha-um{
+            rotate: 47deg;
+            top: 4px;
+        }
+        .peninha-dois{
+            rotate: 14deg;
+            top: -7px;
+        }
+    }
+
+    .esquerdo {
+        left: 10px;
+        z-index: 0;
+    }
+
+    #sombra-corpo {
+        height: 50px;
+        width: 230px;
+        background-color: rgba(0, 0, 255, 0.196);
+        position: absolute;
+        bottom: 0px;
+        border-radius: 0%;
+        transition: all .3s ease-in-out;
+
+    }
+
+    #sombra-corpo:hover {
+        background-color: rgb(0, 0, 0);
+    }
+}
+
+.folha{
+    height: 50px;
+    width: 50px;
+    background-color: chartreuse;
+    position: absolute;
+    right: 50px;
+    bottom: 60px;
+    border-radius: 0px 40px;
+    z-index: 0;
+    transition: all .3s ease-in-out;
+}
+
+.um {
+    right: -100px;
+    bottom: 0;
+}
+
+.dois { 
+    left: 325px;
+    bottom: 3px;
+    rotate: 80deg;
+}
+
+.tres {
+    right: 306px;
+    top: -20px;
+}
+
+.quatro {
+    left: -119px;
+    top: -60px;
+    rotate: 290deg;
+}
+
+.cinco {
+    left: -50px;
+    bottom: 0;
+}
+
+.seis {
+    top: 0;
+    right: -145px;
+}
+
+.sete {
+    rotate: 90deg;
+    top: 50px;
+    right: -145px;
+}
+
+.folha:hover {
+    transform: scale(1.02);
+    background-color: rgb(118, 234, 1);
+}
